@@ -6,7 +6,7 @@ const quotes = [
 
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 2000;
 
 app.get("/random-quote", (req, res) => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
