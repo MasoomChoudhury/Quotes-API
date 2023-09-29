@@ -8,7 +8,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 2000;
 
-app.get("/random-quote", (req, res) => {
+app.get("/", (req, res) => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const randomQuote = quotes[randomIndex];
   res.json({ quote: randomQuote });
